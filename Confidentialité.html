@@ -1,1 +1,167 @@
 
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title translate="no">GZ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Billabong&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5; /* 明るい背景色 */
+            margin: 0;
+            padding: 0;
+            color: #333; /* テキストの色 */
+            font-family: 'Roboto', Arial, sans-serif; /* 類似のフォントを使用 */
+        }
+        header {
+            background-color: #ffffff; /* 白い背景 */
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 軽い影 */
+        }
+        h1 {
+            margin: 0;
+            font-size: 1.2em; /* 調整されたフォントサイズ */
+            font-family: 'Billabong', cursive;
+            color: #007BFF; /* 青の色 */
+        }
+        .logo-genz {
+            border: 1.5px solid #007BFF; /* 青い境界線 */
+            padding: 3px 6px; /* パディングを減少 */
+            display: inline-block;
+            border-radius: 5px;
+            white-space: nowrap;
+        }
+        .conditions-button {
+            color: #007BFF; /* 青の色 */
+            font-size: 0.9em; /* フォントサイズを減少 */
+            padding: 3px 6px; /* パディングを減少 */
+            border: 1px solid #007BFF; /* 青い境界線 */
+            border-radius: 5px;
+            margin-left: 5px;
+            cursor: pointer;
+            background-color: transparent; /* 透過的な背景 */
+            display: flex;
+            align-items: center; 
+        }
+        .divider {
+            height: 1px;
+            background-color: #007BFF; /* 青い境界線 */
+            width: 100%;
+            margin-top: 0; /* 上のマージンを削除 */
+        }
+        .divider-text {
+            text-align: center;
+            color: #333; /* テキストの色 */
+            font-size: 0.9em;
+            margin: 10px 0; 
+        }
+        .content {
+            padding: 10px 20px; /* 上のパディングを減少 */
+            font-size: 0.85em;
+        }
+        .content h2 {
+            font-size: 1.2em; /* 見出しのサイズを減少 */
+        }
+        footer {
+            text-align: center;
+            color: #333; /* テキストの色 */
+            margin: 20px 0;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="index.html" style="text-decoration: none; color: inherit;">
+        <h1 class="logo-genz" translate="no">GZ</h1>
+    </a>
+    <div style="display: flex; align-items: center;">
+        <div class="conditions-button">プライバシー</div>
+    </div>
+</header>
+
+<div class="divider"></div>
+<div class="divider-text">プライバシーポリシー</div>
+<div class="divider"></div>
+
+<div class="content">
+    <p><strong>最終更新日: 31/01/2024.</strong></p>
+    <p>GZへようこそ、グローバルな人口統計統計を生成するために特化したウェブアプリケーションです。私たちはあなたのプライバシーを尊重し、保護します。このプライバシーポリシーは、私たちが収集する情報の種類、どのように使用するか、どのように保護するか、そしてユーザーとしてのあなたの権利を説明します。</p>
+
+    <h2>1. 収集する情報</h2>
+    <p><strong>a) 自発的に提供された情報</strong></p>
+    <p>アプリケーションを使用する際に、以下の情報を自発的に提供することができます：</p>
+    <ul>
+        <li>生年月日</li>
+        <li>出生国</li>
+        <li>性別</li>
+    </ul>
+    
+    <p><strong>b) 自動収集なし</strong></p>
+    <p>クッキーやブラウジング情報のようなデータを自動的に収集することはありません。</p>
+
+    <h2>2. 情報の使用</h2>
+    <p>提供された情報は、以下の目的でのみ使用します：</p>
+    <ul>
+        <li>出生に関する匿名統計を分析し生成する（日、月、年、国、性別、年齢などによる）。</li>
+        <li>教育的および歴史的な目的のために人口動態のトレンドを特定する。</li>
+    </ul>
+    <p>あなたのデータは、マーケティング、広告、またはその他の目的には決して使用されません。</p>
+
+    <h2>3. 情報の共有</h2>
+    <p>以下の厳格に必要な場合を除き、あなたの情報を第三者と共有することはありません：</p>
+    <ul>
+        <li><strong>サービスプロバイダー：</strong> データをホストするためにGoogle Cloud（Firebase）を使用し、寄付管理のためにPayPalを使用します。これらのパートナーも、厳格なプライバシー基準を遵守することを約束しています。</li>
+        <li><strong>法的遵守：</strong> 法律で要求される場合、法的義務を満たすためにあなたのデータを開示する必要があるかもしれません。</li>
+    </ul>
+    <p>これらのケースを除いて、あなたのデータは誰にも販売、賃貸、または交換されることはありません。</p>
+
+    <h2>4. データの保存とセキュリティ</h2>
+    <p>あなたのデータは、以下を含む厳格な措置によって保護されています：</p>
+    <ul>
+        <li><strong>暗号化：</strong> あなたのデバイスとサーバー間のすべての通信は、SSL/TLSプロトコルを通じて保護されています。</li>
+        <li><strong>安全なホスティング：</strong> あなたのデータは、アメリカ合衆国にあるGoogle Cloudの安全なサーバーに保存されており、国際的なデータ保護基準に準拠しています。</li>
+    </ul>
+    <p>さらに、以下を保証します：</p>
+    <ul>
+        <li>提出されたデータは即座に集約され、匿名化されます。</li>
+        <li>個別のユーザーに追跡可能な情報はありません。</li>
+    </ul>
+
+    <h2>5. データの削除</h2>
+    <p>あなたは自分のデータを完全に制御できます：</p>
+    <ul>
+        <li>送信後、リセットアイコンが表示され、セッションがアクティブな限りいつでもデータを削除できます。</li>
+        <li>セッションが終了したり期限切れになったりすると、データは不可逆的に匿名化され、削除できなくなります。</li>
+    </ul>
+    <p>この集約データは、長期的な研究と分析のために保持します。ただし、大きな問題が発生した場合やリクエストがあった場合には、収集したすべてのデータを削除することを約束します。</p>
+
+    <h2>6. クッキーと類似の技術</h2>
+    <p>クッキーや追跡技術は使用していません。</p>
+
+    <h2>7. 国際データ転送</h2>
+    <p>あなたのデータはアメリカ合衆国に転送および保存される場合があります。私たちは、すべてのデータが国際的なデータ保護法に従って処理され、同じセキュリティレベルが確保されることを保証します。</p>
+
+    <h2>8. 保持期間</h2>
+    <p>将来の人口統計分析に役立つように、匿名化されたデータは無期限に保持されます。ただし、ユーザーのアクティブなセッションを超えて識別可能なデータは保持されません。</p>
+
+    <h2>9. このポリシーの変更</h2>
+    <p>私たちは、このプライバシーポリシーを、私たちの実践や適用される法律の変更を反映するために更新することがあります。重要な変更は、私たちのアプリケーションまたはメールで通知されます。</p>
+
+    <h2>10. お問い合わせ</h2>
+    <p>このプライバシーポリシーに関する質問や懸念がある場合は、お問い合わせください：</p>
+    <p>メール: admin@g-z.online</p>
+</div>
+
+<footer>
+    <p>©️ 2025 <span translate="no">GZ</span></p>
+</footer>
+
+</body>
+</html>
