@@ -1,1 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GZ</title>
+    <link href="https://fonts.googleapis.com/css2?family=Billabong&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f5f5f5; /* 明るい背景色 */
+            margin: 0;
+            padding: 0;
+            color: #333; /* テキストの色 */
+            font-family: 'Roboto', Arial, sans-serif; /* 類似のフォントを使用 */
+        }
+        header {
+            background-color: #ffffff; /* 白い背景 */
+            padding: 5px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 50px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* 軽い影 */
+        }
+        h1 {
+            margin: 0;
+            font-size: 1.2em; /* フォントサイズを調整 */
+            font-family: 'Billabong', cursive;
+            color: #007BFF; /* 青色 */
+        }
+        .logo-genz {
+            border: 1.5px solid #007BFF; /* 青いボーダー */
+            padding: 3px 6px; /* パディングを減らす */
+            display: inline-block;
+            border-radius: 5px;
+            white-space: nowrap;
+        }
+        .faq-button {
+            color: #007BFF; /* 青色 */
+            font-size: 0.9em; /* フォントサイズを減らす */
+            padding: 3px 6px; /* パディングを減らす */
+            border: 1px solid #007BFF; /* 青いボーダー */
+            border-radius: 5px;
+            margin-left: 5px;
+            cursor: pointer;
+            background-color: transparent; /* 背景を透明に */
+            display: flex;
+            align-items: center; 
+        }
+        .divider {
+            height: 1px;
+            background-color: #007BFF; /* 青いボーダー */
+            width: 100%;
+            margin-top: 0; /* 上のマージンを削除 */
+        }
+        .divider-text {
+            text-align: center;
+            color: #333; /* テキストの色 */
+            font-size: 0.9em;
+            margin: 10px 0; 
+        }
+        .faq-content {
+            padding: 10px 20px; /* 上のパディングを減らす */
+            font-size: 0.85em;
+        }
+        .faq-content h2 {
+            font-size: 1.2em; /* FAQのタイトルのサイズを減らす */
+        }
+        footer {
+            text-align: center;
+            color: #333; /* テキストの色 */
+            margin: 20px 0;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+<body>
 
+<header>
+    <a href="index.html" style="text-decoration: none; color: inherit;">
+        <h1 class="logo-genz" translate="no">GZ</h1>
+    </a>
+    <div style="display: flex; align-items: center;">
+        <div class="faq-button">FAQ</div>
+    </div>
+</header>
+
+<div class="divider"></div>
+<div class="divider-text">FAQ - よくある質問</div>
+<div class="divider"></div>
+
+<div class="faq-content">
+    <h2>1. GZとは何ですか？どのように使いますか？</h2>
+    <p>G-Zは、ユーザーが登録なしで自分の生年月日、出生国、性別を送信できる完全無料のウェブアプリケーションです。これは、次のような出生に関するグローバルおよび国別の統計を生成するために設計されています：</p>
+    <ul>
+        <li>日、月、年ごとの出生。</li>
+        <li>国、性別、年齢ごとの分布。</li>
+    </ul>
+    <p>主な目的は、世界の人口動向をよりよく理解するために、アクセス可能な人口統計データを提供することです。</p>
+
+    <h2>2. 私のデータは匿名ですか？</h2>
+    <p>はい、あなたのデータは完全に匿名です。G-Zは、次のことを保証するように設計されています：</p>
+    <ul>
+        <li>いかなるデータも個々のユーザーに追跡できません。</li>
+        <li>誰が何を送信したかを特定する情報は収集していません。安心してください、あなたの身元は保護されており、あなたのデータは即座に集約されます。</li>
+    </ul>
+
+    <h2>3. どうやって私のデータが送信されたかを知ることができますか？</h2>
+    <p>あなたのデータが送信されると：</p>
+    <ul>
+        <li>送信ボタンの色が変わります：送信中はオレンジ、送信成功後は緑になります。</li>
+        <li>ボタンのテキストは「送信」から「送信済み」に変わります。</li>
+    </ul>
+    <p>これらのインジケーターは、あなたのデータが考慮されたことを確認します。</p>
+
+    <h2>4. 私の送信内容を変更または削除できますか？</h2>
+    <p>はい、送信後すぐにデータを削除するオプションがあります。やり方は次のとおりです：</p>
+    <ul>
+        <li>送信後にリセットアイコンが表示されます。</li>
+        <li>このアイコンをクリックすると、データが完全にサーバーから削除されます。</li>
+    </ul>
+    <p>ただし、ウェブアプリケーションを閉じるか、セッションが切れると、データは不可逆的に匿名化され、変更または削除できなくなります。詳細については、<a href="Confidentialité.html">プライバシーポリシー '5'</a>をご覧ください。</p>
+
+    <h2>5. 間違った情報を提供した場合はどうなりますか？</h2>
+    <p>統計の質を保証するために、正確で確認された情報を送信することをお勧めします。送信後にエラーに気付いた場合：</p>
+    <ul>
+        <li>リセットアイコンを使用してデータを削除します。</li>
+        <li>その後、修正された情報を送信できます。</li>
+    </ul>
+
+    <h2>6. なぜGZをサポートするのですか？</h2>
+    <p>GZは無料ですが、以下のためにあなたのサポートが必要です：</p>
+    <ul>
+        <li>サーバーやインフラのコストをカバーするため。</li>
+        <li>すべての人に利益をもたらすより深い分析や将来のプロジェクトを資金提供するため。</li>
+        <li>アプリケーションとその機能の継続的な改善を可能にするため。</li>
+    </ul>
+    <p>PayPalや他の寄付手段を通じて私たちの使命をサポートできます。</p>
+
+    <h2>7. なぜソーシャルメディアでGZをフォローするのですか？</h2>
+    <p>ソーシャルメディアで私たちをフォローすることで、あなたは：</p>
+    <ul>
+        <li>新しい分析や人口統計のトレンドについての情報を得ることができます。</li>
+        <li>私たちのグローバルな統計に関する定期的な更新を発見できます。</li>
+        <li>グローバルな人口に関する教育的な議論に参加できます。</li>
+    </ul>
+    <p>さらに、私たちは統計から得られた興味深い情報を共有し、新しいプロジェクトについてお知らせします。</p>
+</div>
+
+<footer>
+    <p>©️ 2025 GZ</p>
+</footer>
+</body>
+</html>
