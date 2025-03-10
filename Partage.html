@@ -24,10 +24,10 @@
             font-size: 1.8em;
             font-family: 'Billabong', cursive;
             color: #007BFF; /* 青色 */
-            border: 1.5px solid #007BFF; /* 青のボーダー */
-            padding: 5px 10px;
+            border: 1.5px solid #007BFF; /* 青いボーダー */
+            padding: 4px;
             display: inline-block;
-            border-radius: 10px; /* 角を丸める */
+            border-radius: 12px; /* 角を丸くする */
         }
         .divider {
             height: 1px;
@@ -62,8 +62,8 @@
             font-size: 30px; 
             color: #007BFF; /* 青色 */
             transition: color 0.3s;
-            border: 1px solid #007BFF; /* 青のボーダー */
-            border-radius: 3px;
+            border: 1px solid #007BFF; /* 青いボーダー */
+            border-radius: 10px;
             padding: 8px; 
             background-color: rgba(0, 119, 190, 0.1); /* 明るい背景 */
             display: inline-block;
@@ -82,7 +82,7 @@
             content: '';
             flex: 1;
             height: 1px;
-            background-color: #007BFF; /* 青のボーダー */
+            background-color: #007BFF; /* 青いボーダー */
         }
         .or-divider::before {
             margin-right: 10px;
@@ -95,9 +95,10 @@
         }
         .copy-button {
             margin-top: 10px;
-            padding: 10px 20px;
-            border: 1px solid #007BFF; /* 青のボーダー */
-            background-color: transparent;
+            padding: 10px 17px;
+            border: 1px solid #007BFF; /* 青いボーダー */
+            border-radius: 13px;
+            background-color: rgba(0, 119, 190, 0.1); /* 明るい背景 */
             color: #007BFF; /* 青色 */
             cursor: pointer;
             font-size: 16px;
@@ -111,12 +112,7 @@
             margin-top: 10px;
             color: #007BFF; /* 青色 */
         }
-        .copyright {
-            margin-top: 40px;
-            color: darkgray;
-            font-size: 0.8em;
-            text-align: center;
-        }
+        
     </style>
 </head>
 <body>
@@ -129,18 +125,18 @@
     <div class="divider"></div>
 
     <div class="content">
-        <h1>GZを共有する</h1>
+        <h1>G-Zを共有する</h1>
         <div class="short-divider"></div>
-        <p class="social-message">私たちが誰で、どのように世界に属しているのかを発見しましょう！エンターテインメントに加えて、私たちの世代についてもっと学びましょう：</p>
+        <p class="social-message">私たちが誰であり、どのようにこの世界に属しているかを発見しましょう！娯楽に加えて、私たちの世代についてもっと学びましょう：</p>
 
         <div class="social-icons">
             <a href="https://www.g-z.online" target="_blank" class="icon" onclick="share('Facebook')">
                 <i class="fab fa-facebook"></i>
             </a>
-            <a href="https://api.whatsapp.com/send?text=G-Z%20に参加しよう%20!%20一緒に,%20私たちの世代の魅力的な秘密を発見し,%20興奮する発見とエンターテイメントの瞬間を体験しよう.%20このユニークな冒険の一部になろう！%20🌟%20https://www.g-z.online" target="_blank" class="icon" onclick="share('WhatsApp')">
+            <a href="https://api.whatsapp.com/send?text=G-Zに参加しましょう！一緒に、私たちの世代の魅力的な秘密を発見し、刺激的な発見とエンターテインメントの瞬間を体験しましょう。このユニークな冒険の一部になりましょう！🌟 https://www.g-z.online" target="_blank" class="icon" onclick="share('WhatsApp')">
                 <i class="fab fa-whatsapp"></i>
             </a>
-            <a href="https://telegram.me/share/url?url=https://www.g-z.online&text=G-Z%20に参加しよう%20!%20一緒に,%20私たちの世代の魅力的な秘密を発見し,%20興奮する発見とエンターテイメントの瞬間を体験しよう.%20このユニークな冒険の一部になろう！%20🌟" target="_blank" class="icon" onclick="share('Telegram')">
+            <a href="https://telegram.me/share/url?url=https://www.g-z.online&text=G-Zに参加しましょう！一緒に、私たちの世代の魅力的な秘密を発見し、刺激的な発見とエンターテインメントの瞬間を体験しましょう。このユニークな冒険の一部になりましょう！🌟" target="_blank" class="icon" onclick="share('Telegram')">
                 <i class="fab fa-telegram"></i>
             </a>
             <a href="https://www.g-z.online" target="_blank" class="icon" onclick="share('Twitter')">
@@ -160,20 +156,17 @@
         <p class="copy-status" id="copyStatus"></p>
     </div>
 
-    <div class="copyright">
-        &copy; 2025 <span translate="no">G-Z</span>. 全著作権所有。
-    </div>
-
+    
     <script>
-        const shareText = "G-Zに参加しよう！一緒に、私たちの世代の魅力的な秘密を発見し、興奮する発見とエンターテイメントの瞬間を体験しよう。このユニークな冒険の一部になろう！🌟";
+        const shareText = "G-Zに参加しましょう！一緒に、私たちの世代の魅力的な秘密を発見し、刺激的な発見とエンターテインメントの瞬間を体験しましょう。このユニークな冒険の一部になりましょう！🌟";
         const shareLink = "https://www.g-z.online";
 
         function copyLink() {
             navigator.clipboard.writeText(shareLink).then(() => {
                 document.getElementById("copyStatus").innerText = "次の共有リンクがクリップボードにコピーされました: " + shareLink;
             }).catch(err => {
-                console.error("テキストのコピー中にエラーが発生しました: ", err);
-                document.getElementById("copyStatus").innerText = "テキストのコピー中にエラーが発生しました。";
+                console.error("テキストのコピーエラー: ", err);
+                document.getElementById("copyStatus").innerText = "テキストのコピーエラー。";
             });
         }
 
@@ -184,7 +177,7 @@
                     url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareLink)}&quote=${encodeURIComponent(shareText)}`;
                     break;
                 case 'WeChat':
-                    alert("WeChatでの共有は通常アプリを通じて行います。");
+                    alert("WeChatでの共有は通常アプリを通じて行われます。");
                     return;
                 case 'Twitter':
                     url = `https://twitter.com/intent/tweet?url=${encodeURIComponent(shareLink)}&text=${encodeURIComponent(shareText)}`;
